@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".XmlExampleActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center">
+
+        <!-- Header -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Traditional XML Example"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No Compose Required!"
+            android:textSize="16sp"
+            android:textColor="@color/gray_600"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Info Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:elevation="2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:background="@color/gray_100">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ℹ️ XML-Based Demo"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="This activity demonstrates PermissionFlow using traditional Android Views and XML layouts. No Jetpack Compose dependencies are required!"
+                    android:textSize="14sp"
+                    android:textColor="@color/gray_700"
+                    android:lineSpacingMultiplier="1.2" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Status Display -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:elevation="2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:background="@android:color/white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Status:"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/gray_600"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:id="@+id/tvStatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ready"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"
+                    android:minHeight="60dp"
+                    android:gravity="center_vertical"
+                    android:padding="8dp"
+                    android:background="@color/gray_100" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Single Permission Buttons -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Single Permissions"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/btnRequestCamera"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="📷 Request Camera"
+            android:textSize="16sp"
+            android:layout_marginBottom="12dp"
+            style="@style/Widget.AppCompat.Button" />
+
+        <Button
+            android:id="@+id/btnRequestLocation"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="📍 Request Location"
+            android:textSize="16sp"
+            android:layout_marginBottom="12dp"
+            style="@style/Widget.AppCompat.Button" />
+
+        <Button
+            android:id="@+id/btnRequestMicrophone"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="🎤 Request Microphone"
+            android:textSize="16sp"
+            android:layout_marginBottom="24dp"
+            style="@style/Widget.AppCompat.Button" />
+
+        <!-- Multiple Permissions -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Multiple Permissions"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/btnRequestMultiple"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="🎥 Camera + Microphone"
+            android:textSize="16sp"
+            android:layout_marginBottom="24dp"
+            style="@style/Widget.AppCompat.Button" />
+
+        <!-- Back Button -->
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="← Back"
+            android:textSize="16sp"
+            android:background="@color/gray_200"
+            android:textColor="@android:color/black"
+            style="@style/Widget.AppCompat.Button.Borderless" />
+
+    </LinearLayout>
+
+</ScrollView>

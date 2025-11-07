@@ -1,0 +1,15 @@
+## This file is used to specify the Android SDK location.
+## Copy this file to 'local.properties' and update the path.
+##
+## For customization when using a Version Control System, please read the
+## header note.
+
+# Location of the Android SDK (automatically detected by Android Studio)
+# Windows example: sdk.dir=C\:\\Users\\YourName\\AppData\\Local\\Android\\Sdk
+# macOS example: sdk.dir=/Users/YourName/Library/Android/sdk
+# Linux example: sdk.dir=/home/username/Android/Sdk
+
+sdk.dir=
+
+# Note: Android Studio will automatically create local.properties when you open the project
+# You typically don't need to manually create this file
